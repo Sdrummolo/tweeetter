@@ -19,7 +19,7 @@ function App() {
     <Router>
       <div className="container">
         <Switch>
-          <Route path="/" exact render={props => (
+          <Route path="/tweeetter" exact render={props => (
             <>
               <h1>Home</h1>
               <NewTweet />
@@ -27,7 +27,7 @@ function App() {
               {isLoading ? <Spinner /> : null}
             </>
           )} />
-          <Route path="/tweet/:id" component={TweetPage} />
+          <Route path="/tweeetter/tweet/:id" component={TweetPage} />
         </Switch>
       </div>
     </Router>
