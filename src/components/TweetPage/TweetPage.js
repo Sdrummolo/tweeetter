@@ -44,7 +44,7 @@ const TweetPage = ({ match }) => {
       return (
          <>
             <div className={styles.nav}>
-               <Link to={'/tweeetter'}>
+               <Link to={'/'}>
                   <div className={styles.iconContainer}>
                      <i className="fas fa-arrow-left fa-lg"></i>
                   </div>

@@ -16,7 +16,7 @@ const Tweet = ({ data }) => {
    }
 
    return (
-      <Link to={`/tweeetter/tweet/${id}`} onClick={handleClick}>
+      <Link to={`/tweet/${id}`} onClick={handleClick}>
          <div className={styles.tweetContainer}>
             <div className={styles.imgContainer}>
                <img src={pic} alt="profile-pic" />
