@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/tweeetter/static/css/main.aba16752.chunk.css",
-    "main.js": "/tweeetter/static/js/main.d5e5c0c8.chunk.js",
-    "main.js.map": "/tweeetter/static/js/main.d5e5c0c8.chunk.js.map",
+    "main.js": "/tweeetter/static/js/main.69cf3ea6.chunk.js",
+    "main.js.map": "/tweeetter/static/js/main.69cf3ea6.chunk.js.map",
     "runtime-main.js": "/tweeetter/static/js/runtime-main.62f2eded.js",
     "runtime-main.js.map": "/tweeetter/static/js/runtime-main.62f2eded.js.map",
     "static/js/2.df86f3b4.chunk.js": "/tweeetter/static/js/2.df86f3b4.chunk.js",
     "static/js/2.df86f3b4.chunk.js.map": "/tweeetter/static/js/2.df86f3b4.chunk.js.map",
     "index.html": "/tweeetter/index.html",
-    "precache-manifest.cd3b521bca6f3a8ad512bca719145eb4.js": "/tweeetter/precache-manifest.cd3b521bca6f3a8ad512bca719145eb4.js",
+    "precache-manifest.7f10bf6d996e7c5a12f6a72f2c92a1be.js": "/tweeetter/precache-manifest.7f10bf6d996e7c5a12f6a72f2c92a1be.js",
     "service-worker.js": "/tweeetter/service-worker.js",
     "static/css/main.aba16752.chunk.css.map": "/tweeetter/static/css/main.aba16752.chunk.css.map",
     "static/js/2.df86f3b4.chunk.js.LICENSE.txt": "/tweeetter/static/js/2.df86f3b4.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.62f2eded.js",
     "static/js/2.df86f3b4.chunk.js",
     "static/css/main.aba16752.chunk.css",
-    "static/js/main.d5e5c0c8.chunk.js"
+    "static/js/main.69cf3ea6.chunk.js"
   ]
 }
