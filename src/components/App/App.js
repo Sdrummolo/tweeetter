@@ -1,37 +1,42 @@
-import React, { useContext, useEffect } from 'react'
-import { HashRouter as Router, Route, Switch } from 'react-router-dom'
-import NewTweet from '../NewTweet/NewTweet'
-import Spinner from '../Spinner/Spinner'
-import TweetsContainer from '../TweetsContainer/TweetsContainer'
-import TweetPage from '../TweetPage/TweetPage'
+import React, { useContext, useEffect } from "react"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import NewTweet from "../NewTweet/NewTweet"
+import Spinner from "../Spinner/Spinner"
+import TweetsContainer from "../TweetsContainer/TweetsContainer"
+import TweetPage from "../TweetPage/TweetPage"
+import NotFound from "../NotFound/NotFound"
 
-import styles from './App.module.css'
-import TweeetterContext from '../../context/tweeetterContext'
+import TweeetterContext from "../../context/tweeetter/tweeetterContext"
 
 function App() {
-  const { getTweets, isLoading } = useContext(TweeetterContext)
+	const { getTweets, isLoading } = useContext(TweeetterContext)
 
-  useEffect(() => {
-    getTweets()
-  }, [])
+	useEffect(() => {
+		getTweets()
+	}, [])
 
-  return (
-    <Router basename="/">
-      <div className="container">
-        <Switch>
-          <Route path="/" exact render={props => (
-            <>
-              <h1>Home</h1>
-              <NewTweet />
-              <TweetsContainer />
-              {isLoading ? <Spinner /> : null}
-            </>
-          )} />
-          <Route path="/tweet/:id" component={TweetPage} />
-        </Switch>
-      </div>
-    </Router>
-  )
+	return (
+		<Router basename="/tweeetter">
+			<div className="container">
+				<Switch>
+					<Route
+						exact
+						path="/"
+						render={(props) => (
+							<>
+								<h1>Home</h1>
+								<NewTweet />
+								<TweetsContainer />
+								{isLoading ? <Spinner /> : null}
+							</>
+						)}
+					/>
+					<Route exact path="/tweet/:id" component={TweetPage} />
+					<Route path="/tweeetter" component={NotFound} />
+				</Switch>
+			</div>
+		</Router>
+	)
 }
 
 export default App
