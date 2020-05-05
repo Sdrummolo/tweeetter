@@ -6,4 +6,4 @@ Usage:
 2) npm install to install required dependencies
 3) npm start
 
-Posts and comments are fetched randomly from an API when the user opens the app
+Posts and comments are fetched randomly from an API when the user opens the app for the first time
