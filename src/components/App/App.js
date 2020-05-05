@@ -9,34 +9,34 @@ import NotFound from "../NotFound/NotFound"
 import TweeetterContext from "../../context/tweeetter/tweeetterContext"
 
 function App() {
-	const { getTweets, isLoading } = useContext(TweeetterContext)
+   const { getTweets, isLoading } = useContext(TweeetterContext)
 
-	useEffect(() => {
-		getTweets()
-	}, [])
+   useEffect(() => {
+      getTweets()
+   }, [])
 
-	return (
-		<Router basename="/tweeetter">
-			<div className="container">
-				<Switch>
-					<Route
-						exact
-						path="/"
-						render={(props) => (
-							<>
-								<h1>Home</h1>
-								<NewTweet />
-								<TweetsContainer />
-								{isLoading ? <Spinner /> : null}
-							</>
-						)}
-					/>
-					<Route exact path="/tweet/:id" component={TweetPage} />
-					<Route path="/tweeetter" component={NotFound} />
-				</Switch>
-			</div>
-		</Router>
-	)
+   return (
+      <Router basename="/tweeetter">
+         <div className="container">
+            <Switch>
+               <Route
+                  exact
+                  path="/"
+                  render={(props) => (
+                     <>
+                        <h1>Home</h1>
+                        <NewTweet />
+                        <TweetsContainer />
+                        {isLoading ? <Spinner /> : null}
+                     </>
+                  )}
+               />
+               <Route exact path="/tweet/:id" component={TweetPage} />
+               <Route path="/tweeetter" component={NotFound} />
+            </Switch>
+         </div>
+      </Router>
+   )
 }
 
 export default App
