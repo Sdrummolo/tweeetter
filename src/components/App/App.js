@@ -9,7 +9,7 @@ import NotFound from "../NotFound/NotFound"
 import TweeetterContext from "../../context/tweeetter/tweeetterContext"
 
 function App() {
-   const { getTweets, isLoading } = useContext(TweeetterContext)
+   const { getTweets, isLoading, tweets } = useContext(TweeetterContext)
 
    useEffect(() => {
       getTweets()
@@ -26,7 +26,7 @@ function App() {
                      <>
                         <h1>Home</h1>
                         <NewTweet />
-                        <TweetsContainer />
+                        {tweets ? <TweetsContainer tweets={tweets} /> : null}
                         {isLoading ? <Spinner /> : null}
                      </>
                   )}

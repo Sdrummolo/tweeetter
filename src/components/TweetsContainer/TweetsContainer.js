@@ -1,15 +1,8 @@
-import React, { useContext } from "react"
+import React from "react"
 import Tweet from "../Tweet/Tweet"
+import PropTypes from "prop-types"
 
-import TweeetterContext from "../../context/tweeetter/tweeetterContext"
-
-const TweetsContainer = () => {
-   const { tweets } = useContext(TweeetterContext)
-
-   if (!tweets) {
-      return null
-   }
-
+const TweetsContainer = ({ tweets }) => {
    return (
       <div className="tweetsContainer">
          {tweets.map((data) => {
@@ -17,6 +10,10 @@ const TweetsContainer = () => {
          })}
       </div>
    )
+}
+
+TweetsContainer.propTypes = {
+   tweets: PropTypes.array.isRequired,
 }
 
 export default TweetsContainer
