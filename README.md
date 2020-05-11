@@ -4,7 +4,6 @@ Social network App - React
 
 Usage:
 
-<<<<<<< HEAD
 1. git clone
 2. npm install to install required dependencies
 3. npm start
@@ -22,10 +21,3 @@ Context API
 useReducer
 React Router
 Localstorage
-=======
-Posts and comments are fetched randomly from an API when the user opens the app for the first time
-
-Technologies used:
-React Hooks
-Context API
->>>>>>> 1066db601b0b3d86aafbb9b0d307ad7ad8ad1479
