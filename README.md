@@ -10,10 +10,10 @@ Social network App - React
 
 ### Features added:
 
-1. Generate random posts on first loading
-2. Like posts
-3. Comment posts
-4. Create new post
+- Generate random posts on first loading
+- Like posts
+- Comment posts
+- Create new post
 
 ### Technologies used:
 
